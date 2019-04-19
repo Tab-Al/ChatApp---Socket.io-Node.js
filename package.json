@@ -1,0 +1,24 @@
+{
+  "name": "chatapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon main.js"
+  },
+  "author": "Tabish Aleem <tabish.al97@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "connect-flash": "0.1.1",
+    "connect-mongo": "1.1.0",
+    "ejs": "2.3.4",
+    "express": "^4.13.3",
+    "express-session": "1.12.1",
+    "mongoose": "4.3.1",
+    "passport": "0.3.2",
+    "passport-facebook": "2.0.0",
+    "passport-twitter": "1.0.3",
+    "socket.io": "2.2.0"
+  }
+}

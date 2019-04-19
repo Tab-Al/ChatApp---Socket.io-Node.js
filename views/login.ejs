@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ChatCat - Login</title>
+	<link href="/css/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">  
+	<link rel="stylesheet" href="/css/loginStyles.css">
+	<script src="/js/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+	
+	<% if(error_msg != '') { %>
+			<div class="alert alert-danger" role="alert">
+			<%= error_msg %>
+			</div>
+	<% } %>
+	
+	<% if(success_msg != '') { %>
+		<div class="alert alert-success" role="alert">
+		<%= success_msg %>
+		</div>
+	<% } %>
+
+	<div class="container">
+		<div class="titlePanel">
+			<h1>ChatCAT | Login</h1>
+		</div>
+		<br><br>
+		<div class="loginButton">
+			<a href="/auth/facebook">
+				<img id="loginBtnImg" src="/img/fbLoginBtn.png" alt="Sign-In with Facebook">
+			</a>
+		</div>
+	</div>
+</body>
+</html>
